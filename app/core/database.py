@@ -9,7 +9,7 @@ DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:postgres@localho
 db_pool = AsyncConnectionPool(
     conninfo=DATABASE_URL,
     max_size=10,
-    #open=False,
+    open=False,
     kwargs={"autocommit": True, "row_factory": dict_row}
 )
 
