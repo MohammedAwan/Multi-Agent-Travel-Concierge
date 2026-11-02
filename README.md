@@ -1,9 +1,9 @@
 ## 🚀 Live Demo & Showcase
 
-- **Live Application:** [ai-travel-planner.onrender.com](https://multi-agent-travel-concierge.onrender.com/)
+- **Live Application:** [https://multi-agent-travel-concierge.onrender.com/](https://multi-agent-travel-concierge.onrender.com/)
 - **Tech Stack:** FastAPI, LangGraph, Groq, PostgreSQL (`AsyncConnectionPool`), Docker, Render
 
-- ![App Demo](assets/Screen Recording.mp4)
+ ![App Demo](assets/Screen Recording.mp4)
 
 ### Key Architectural Capabilities
 - **Stateful Multi-Agent Workflows:** Orchestrated via LangGraph with cyclic validation nodes.
