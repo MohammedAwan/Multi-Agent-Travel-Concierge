@@ -1,16 +1,6 @@
-## 🚀 Live Demo & Showcase
 
-- **Live Application:** [https://multi-agent-travel-concierge.onrender.com/](https://multi-agent-travel-concierge.onrender.com/)
-- **Tech Stack:** FastAPI, LangGraph, Groq, PostgreSQL (`AsyncConnectionPool`), Docker, Render
 
- ![App Demo](assets\Screen Recording.mp4)
-
-### Key Architectural Capabilities
-- **Stateful Multi-Agent Workflows:** Orchestrated via LangGraph with cyclic validation nodes.
-- **Session Checkpointing:** Conversation state and thread checkpoints persisted across restarts using PostgreSQL.
-- **Zero-Flicker Split Panes:** Independent dual-column scrolling with synchronous Markdown parsing.
-
-# 🌍 Production Multi-Agent Travel Concierge
+# 🌍  Multi-Agent Travel Concierge
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688.svg)](https://fastapi.tiangolo.com/)
@@ -28,11 +18,18 @@ An asynchronous, stateful multi-agent travel concierge application built with **
 - **Live Application:** [https://multi-agent-travel-concierge.onrender.com/]([https://your-service-name.onrender.com](https://multi-agent-travel-concierge.onrender.com/))
 - **API Documentation (Swagger UI):** `https://multi-agent-travel-concierge.onrender.com/docs`
 
- ![App Demo](assets\Screen Recording.mp4)
+ ![App Demo](assets/Screen%20Recording.mp4)
  
 | Dual-Pane Responsive Workspace | Multi-Turn Contextual Refinement |
 | :---: | :---: |
-| *(assets\Screenshot 3.png)* | *(assets\Screenshot 4.png)* |
+| *![](assets/Screenshot%203.png)* | *![](assets/Screenshot%204.png)* |
+
+---
+
+### Key Architectural Capabilities
+- **Stateful Multi-Agent Workflows:** Orchestrated via LangGraph with cyclic validation nodes.
+- **Session Checkpointing:** Conversation state and thread checkpoints persisted across restarts using PostgreSQL.
+- **Zero-Flicker Split Panes:** Independent dual-column scrolling with synchronous Markdown parsing.
 
 ---
 
