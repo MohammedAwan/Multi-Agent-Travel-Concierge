@@ -9,6 +9,9 @@ DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:postgres@localho
 db_pool = AsyncConnectionPool(
     conninfo=DATABASE_URL,
     max_size=10,
+    min_size=1,
+    max_idle=30.0,
+    check=AsyncConnectionPool.check_connection,
     open=False,
     kwargs={"autocommit": True, "row_factory": dict_row}
 )
@@ -18,6 +21,9 @@ async def init_db():
     1. Creates users table for JWT authentication if not exists.
     2. Initializes LangGraph checkpoint tables in PostgreSQL.
     """
+    if db_pool.closed:
+        await db_pool.open()
+        
     await db_pool.wait() # waits for a connection
     async with db_pool.connection() as conn:
         # Create Users table for JWT authentication

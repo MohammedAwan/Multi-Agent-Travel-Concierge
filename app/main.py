@@ -48,7 +48,8 @@ async def lifespan(app: FastAPI):
     global travel_graph
 
     # Open the shared pool and wait until connections are ready
-    await db_pool.open()
+    if db_pool.closed:
+        await db_pool.open()
     await db_pool.wait()
     
     # Run user/app DB table initialization
