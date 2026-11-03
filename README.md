@@ -1,5 +1,9 @@
 
 
+
+
+
+
 # 🌍  Multi-Agent Travel Concierge
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
@@ -18,7 +22,7 @@ An asynchronous, stateful multi-agent travel concierge application built with **
 - **Live Application:** [https://multi-agent-travel-concierge.onrender.com/](https://multi-agent-travel-concierge.onrender.com/)
 - **API Documentation (Swagger UI):** `https://multi-agent-travel-concierge.onrender.com/docs`
 
- ![App Demo](assets/Screen%20Recording.mp4)
+ ![App Demo](https://github.com/user-attachments/assets/5279c1b2-a5ae-49ac-880e-5ae87df06c60)
  
 | Dual-Pane Responsive Workspace | Multi-Turn Contextual Refinement |
 | :---: | :---: |
