@@ -31,7 +31,7 @@ An asynchronous, stateful multi-agent travel concierge application built with **
 - **Session Checkpointing:** Conversation state and thread checkpoints persisted across restarts using PostgreSQL.
 - **Zero-Flicker Split Panes:** Independent dual-column scrolling with synchronous Markdown parsing.
 
----
+
 
 ## ⚡ Architectural Evolution: Prototype to Production
 
@@ -115,7 +115,7 @@ flowchart TD
 - **Backend Framework:** FastAPI (Asynchronous Python 3.11+)
 - **Agent Orchestration:** LangGraph, LangChain Core, LangChain Groq
 - **LLM Inference:** Groq Cloud (Llama 3 / Mixtral models for low-latency completions)
-- **Database & Checkpointing:** PostgreSQL (Neon / Supabase), `psycopg[binary]`, `psycopg-pool`
+- **Database & Checkpointing:** PostgreSQL (Supabase), `psycopg[binary]`, `psycopg-pool`
 - **Data Validation & Auth:** Pydantic v2, `email-validator`, `python-jose`, `passlib[bcrypt]`
 - **Frontend Workspace:** Modern dual-column responsive UI, Vanilla JS, CSS Flexbox, `marked.js`
 - **DevOps & Infrastructure:** Docker, Render Cloud Web Services
@@ -126,12 +126,12 @@ flowchart TD
 
 ### Prerequisites
 - Python 3.11+
-- PostgreSQL database (local instance or free cloud tier via Supabase)
+- PostgreSQL database (paid or free cloud tier via Supabase)
 - Groq Cloud API Key
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/multi-agent-travel-concierge.git
+git clone https://github.com/mohammedawan/multi-agent-travel-concierge.git
 cd multi-agent-travel-concierge
 ```
 
@@ -160,7 +160,7 @@ SECRET_KEY=your_super_secret_jwt_key
 ACCESS_TOKEN_EXPIRE_MINUTES=1440
 
 # Database (PostgreSQL)
-# Note: For pooler connections on Supabase/Neon, ensure sslmode=require
+# Note: For pooler connections on Supabase, ensure sslmode=require
 DATABASE_URL=postgresql://user:password@host:5432/dbname?sslmode=require
 
 # External APIs
