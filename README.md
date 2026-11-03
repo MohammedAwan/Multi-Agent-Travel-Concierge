@@ -15,7 +15,7 @@ An asynchronous, stateful multi-agent travel concierge application built with **
 
 ## 🚀 Live Demo & Visual Walkthrough
 
-- **Live Application:** [https://multi-agent-travel-concierge.onrender.com/]([https://your-service-name.onrender.com](https://multi-agent-travel-concierge.onrender.com/))
+- **Live Application:** [https://multi-agent-travel-concierge.onrender.com/](https://multi-agent-travel-concierge.onrender.com/)
 - **API Documentation (Swagger UI):** `https://multi-agent-travel-concierge.onrender.com/docs`
 
  ![App Demo](assets/Screen%20Recording.mp4)
